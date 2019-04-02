@@ -13,7 +13,7 @@
    limitations under the License.
 
 =============================
-Cartographer ROS for Robotino 
+Cartographer ROS for Robotino
 =============================
 
 |build| |docs| |license|
@@ -34,7 +34,7 @@ via `Cartographer ROS`_.
 Documentation
 =============
 
-You will find complete documentation for using Cartographer ROS with TurtleBots
+You will find complete documentation for using Cartographer ROS with Robotino
 at `our Read the Docs site`_.
 
 .. _our Read the Docs site: https://cartographer-robotino.readthedocs.io/en/latest/
@@ -42,10 +42,10 @@ at `our Read the Docs site`_.
 Contributing
 ============
 
-You can find information about contributing to Cartographer ROS's TurtleBot
+You can find information about contributing to Cartographer ROS's Robotino
 support at `our Contribution page`_.
 
-.. _our Contribution page: https://github.com/googlecartographer/cartographer_turtlebot/blob/master/CONTRIBUTING.md
+.. _our Contribution page: https://github.com/nitsuga/cartographer_robotino/blob/master/CONTRIBUTING.md
 
 .. |build| image:: https://travis-ci.org/nitsuga/cartographer_robotino.svg?branch=master
     :alt: Build Status
@@ -60,4 +60,4 @@ support at `our Contribution page`_.
 .. |license| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
      :alt: Apache 2 license.
      :scale: 100%
-     :target: https://github.com/googlecartographer/cartographer_turtlebot/blob/master/LICENSE
+     :target: https://github.com/nitsuga/cartographer_robotino/blob/master/LICENSE

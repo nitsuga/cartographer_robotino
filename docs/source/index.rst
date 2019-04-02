@@ -12,9 +12,9 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 
-===============================
-Cartographer ROS for TurtleBots
-===============================
+=============================
+Cartographer ROS for Robotino
+=============================
 
 .. toctree::
    :maxdepth: 2
@@ -22,13 +22,13 @@ Cartographer ROS for TurtleBots
 
 `Cartographer`_ is a system that provides real-time simultaneous localization
 and mapping (`SLAM`_) in 2D and 3D across multiple platforms and sensor
-configurations. This repository provides Cartographer SLAM for `TurtleBots`_
+configurations. This repository provides Cartographer SLAM for `Robotino`_
 via `Cartographer ROS`_.
 
 .. _Cartographer: https://github.com/googlecartographer/cartographer
 .. _Cartographer ROS: https://github.com/googlecartographer/cartographer_ros
 .. _SLAM: https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping
-.. _TurtleBots: https://www.festo-didactic.com/int-en/services/robotino
+.. _Robotino: https://www.festo-didactic.com/int-en/services/robotino
 
 Building & Installation
 =======================
@@ -50,7 +50,7 @@ using `Ninja <https://ninja-build.org>`_.
     cd catkin_ws
     wstool init src
 
-    # Merge the cartographer_turtlebot.rosinstall file and fetch code for dependencies.
+    # Merge the cartographer_robotino.rosinstall file and fetch code for dependencies.
     wstool merge -t src https://raw.githubusercontent.com/nitsuga/cartographer_robotino/master/cartographer_robotino.rosinstall
     wstool update -t src
 
@@ -65,25 +65,25 @@ using `Ninja <https://ninja-build.org>`_.
     catkin_make_isolated --install --use-ninja
     source install_isolated/setup.bash
 
-Running the demo
-================
-
-Now that Cartographer, Cartographer ROS, and Cartographer ROS's Robotino
-integration are installed, download the example bag to a known location, in
-this case ``~/Downloads``, and use ``roslaunch`` to bring up the demo:
-
-  .. code-block:: bash
-
-    # Download the example bag.
-    wget -P ~/Downloads https://storage.googleapis.com/cartographer-public-data/bags/turtlebot/cartographer_turtlebot_demo.bag
-
-    # Launch the 2D LIDAR demo.
-    roslaunch cartographer_robotino demo_lidar_2d.launch bag_filename:=${HOME}/Downloads/cartographer_turtlebot_demo.bag
-
-    # Launch the 2D depth camera demo.
-    roslaunch cartographer_robotino demo_depth_camera_2d.launch bag_filename:=${HOME}/Downloads/cartographer_turtlebot_demo.bag
-
-    # Launch the 3D depth camera demo.
-    roslaunch cartographer_robotino demo_depth_camera_3d.launch bag_filename:=${HOME}/Downloads/cartographer_turtlebot_demo.bag
-
-The launch files will bring up ``roscore`` and ``rviz`` automatically.
+.. Running the demo
+.. ================
+..
+.. Now that Cartographer, Cartographer ROS, and Cartographer ROS's Robotino
+.. integration are installed, download the example bag to a known location, in
+.. this case ``~/Downloads``, and use ``roslaunch`` to bring up the demo:
+..
+..   .. code-block:: bash
+..
+..     # Download the example bag.
+..     wget -P ~/Downloads https://storage.googleapis.com/cartographer-public-data/bags/turtlebot/cartographer_turtlebot_demo.bag
+..
+..     # Launch the 2D LIDAR demo.
+..     roslaunch cartographer_robotino demo_lidar_2d.launch bag_filename:=${HOME}/Downloads/cartographer_turtlebot_demo.bag
+..
+..     # Launch the 2D depth camera demo.
+..     roslaunch cartographer_robotino demo_depth_camera_2d.launch bag_filename:=${HOME}/Downloads/cartographer_turtlebot_demo.bag
+..
+..     # Launch the 3D depth camera demo.
+..     roslaunch cartographer_robotino demo_depth_camera_3d.launch bag_filename:=${HOME}/Downloads/cartographer_turtlebot_demo.bag
+..
+.. The launch files will bring up ``roscore`` and ``rviz`` automatically.
